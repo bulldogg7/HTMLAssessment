@@ -2,17 +2,21 @@
 	color: steelblue;
 	font-family: sans-serif;
 }
-#scoreBoard {
-	color: darkorange;
-	border: 2px solid;
-	border-color: black;
+#scoreBoard th {
+	color: darkblue;
+	font-weight: bold;
+	background-color: lightgray;
+}
+#scoreBoard td, #scoreBoard th {
 	text-align: center; 
+	border: 1px solid;
+	border-color: black;
 }
 ul {
 	list-style: square;
 }
 a:hover {
-	color: goldenrod;
+	color: darkorange;
 	text-decoration: none;
 }
 blockquote {
@@ -28,15 +32,17 @@ img[alt="Broncos Logo"] {
 img[alt="Bears Logo"] {
 	display: none;
 }
-h4 + ul {
+#teamRoster > li:first-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
-  background-repeat: no-repeat;
-    background-color: rgba(255,255,255,0.6);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
 }
-h4 + ul + ul {
+#teamRoster > li:last-child {
 	background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
-  background-repeat: no-repeat;
-    background-color: rgba(255,255,255,0.6);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
 }
